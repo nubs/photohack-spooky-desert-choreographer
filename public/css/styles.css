@@ -249,5 +249,21 @@ div.homemsg  a.gplus, div.gplus  a.linked:hover{
 .share-disabled {
   opacity: 0.1;
 }
-
+a#bmw,a#harley,a#honda,a#kawasaki{
+    display:inline-block;
+    margin:10px 10px 0 10px;
+    width:50px;
+    height:58px;
+    background:transparent url('../img/bmw.png') 0 0 no-repeat;
+    border:solid 1px #a2a2a2;
+}
+a#harley{
+    background:transparent url('../img/harley.png') 0 0 no-repeat;
+}
+a#honda{
+    background:transparent url('../img/honda.png') 0 0 no-repeat;
+}
+a#kawasaki{
+    background:transparent url('../img/kawasaki.png') 0 0 no-repeat;
+}
 
