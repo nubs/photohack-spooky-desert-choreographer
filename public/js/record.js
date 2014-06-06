@@ -113,7 +113,7 @@ function drawVideoFrame_() {
   var ctx = canvas[0].getContext('2d');
 
   ctx.drawImage(video[0], 0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
-  ctx.drawImage(logoImage, 325, 5, 50,55);
+  ctx.drawImage(logoImage, 420, 5, 50,55);
   ctx.lineWidth=5;
   ctx.fillStyle="#ffffff";
   ctx.lineStyle="#000000";
