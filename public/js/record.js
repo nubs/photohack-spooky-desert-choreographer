@@ -235,7 +235,7 @@ function embedVideoPreview(opt_url) {
   });
   downloadLink.text('[ download video ]');
 
-  $('#instructions').text('Congratulations on recording your video resume! If you aren\'t completely happy with it, feel free to record again, otherwise hit continue to share your video.');
+  $('#instructions').text('Congratulations on recording your video listing! If you aren\'t completely happy with it, feel free to record again, otherwise hit continue to share your video.');
   $('#record-me').html('<span class="glyphicon glyphicon-record"></span> Try Again');
   $('#record-me').attr('disabled', false);
   $('#stop-me').html('<span class="glyphicon glyphicon-ok"></span> Continue');
