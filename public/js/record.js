@@ -1,6 +1,7 @@
 (function(exports) {
 var logoImage = new Image();
-logoImage.src = '../img/recruitMe.svg';
+var logomake = $('#prompt_logo').val();
+logoImage.src = '../img/'+logomake+'.png';
 
 exports.URL = exports.URL || exports.webkitURL;
 
@@ -112,7 +113,7 @@ function drawVideoFrame_() {
   var ctx = canvas[0].getContext('2d');
 
   ctx.drawImage(video[0], 0, 0, CANVAS_WIDTH, CANVAS_HEIGHT);
-  ctx.drawImage(logoImage, 295, 5, 180,75);
+  ctx.drawImage(logoImage, 420, 5, 50,55);
   ctx.lineWidth=5;
   ctx.fillStyle="#ffffff";
   ctx.lineStyle="#000000";

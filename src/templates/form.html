@@ -9,7 +9,14 @@ $(document).ready(function(){
         event.preventDefault();
         $( "#resumeform" ).submit();
     })
-    
+   
+
+    $('#makelogos a').on('click',function(event){
+        event.preventDefault();
+        $( "#logo" ).val($(this).attr('id'));
+        $('#makelogos a').css({"background-color":"transparent"})
+        $(this).css({"background-color":"#f6f2c3"})
+    })
 });
 </script>
 <div class="homemsg">
@@ -45,6 +52,14 @@ $(document).ready(function(){
         <input type="text" name="name" id="location" value="" />
         <label>Seller Phone</label>
         <input type="text" name="phone" id="location" value="" class="shrt"  />
+        <input type="hidden" id="logo" name="logo" value="" />
+        <label>Add your Make logo to the video</label>
+        <div id="makelogos">
+            <a href="/" id="bmw"></a>
+            <a href="/" id="honda"></a>
+            <a href="/" id="harley"></a>
+            <a href="/" id="kawasaki"></a>
+        </div>
     </form>
     <a href="/video" class="strtvid">Start Video</a>
 </div>
