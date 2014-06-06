@@ -63,8 +63,8 @@ return function(\Slim\Slim $app) {
         $videoId = $youtube->uploadVideo(
             "/tmp/{$app->request->post('id')}/output.webm", 
             "{$formInfo['vidname']}",
-            "{$formInfo['vidname']} is a great bike!  Check it Out!"
-             ['listing', 'photoHack', 'Dominion Enterprises', 'Hackathon', 'motorcycle']
+            "{$formInfo['vidname']} is a great bike!  Check it Out!",
+            ['listing', 'photoHack', 'Dominion Enterprises', 'Hackathon', 'motorcycle']
         );
 
         $app->response->setBody(json_encode(['youtubeUrl' => "https://www.youtube.com/watch?v={$videoId}"]));
